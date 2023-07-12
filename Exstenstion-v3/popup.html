@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VK Read Extension</title>
+  <meta charset="utf-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    button {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    #messageText {
+      font-size: 16px;
+      margin-top: 20px;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>VK Send and Read Extension</h1>
+  <div class="button-container">
+    <button id="sendRandomButton">Отправить случайное сообщение</button>
+    <button id="pressEnterButton">Нажать ВВОД</button>
+    <button id="continueButton">Продолжить</button>
+    <button id="pauseButton">Пауза</button>
+    <button id="resetButton">Заново</button>
+  </div>
+  <p id="messageText"></p>
+</body>
+</html>
